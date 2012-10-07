@@ -1,0 +1,7 @@
+void update(float& i);
+void g(double d, float r)
+{
+	update (2.0f); // ERROR const arg
+	update (r); // pass ref to r
+	update(d); // errpr type conversion required
+}
